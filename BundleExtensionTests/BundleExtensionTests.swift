@@ -12,7 +12,6 @@ class BundleExtensionTests: XCTestCase {
 
     func testBundleExtension() {
         let animalResponseModel: AnimalResponseModel? =  Bundle.main.decode("animals.json")
-        
         XCTAssertEqual(animalResponseModel?.animal?.count, 12, "Respopnse model not decoded properly")
         
     }
